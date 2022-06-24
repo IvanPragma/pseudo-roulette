@@ -1,6 +1,8 @@
 # Pseudo roulette
 REST API на django (DRF) для рулетки с 10 цифровыми ячейками и с 1 ячейкой "джекпот".
 
+![](https://github.com/IvanPragma/pseudo-roulette/actions/workflows/django.yml/badge.svg)
+
 ## Запуск
 - Перейдите в каталог с проектом
 - Выполните `cd pseudo_roulette`

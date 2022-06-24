@@ -127,7 +127,9 @@ class Scroll(models.Model):
             return -1
 
         while True:
-            potential_result = random.randint(1, 10)
+            potential_result = random.choices(
+                self.result_choices[1:],
+                weights=[20, 100, 45, 70, 15, 140, 20, 20, 140, 45])[0][0]
             if potential_result not in already_chosen_slots:
                 break
 

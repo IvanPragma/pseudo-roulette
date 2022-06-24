@@ -9,10 +9,10 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'test')
 DATABASE_HOST = os.getenv('DATABASE_HOST', 'localhost')
 DATABASE_USER = os.getenv('DATABASE_USER', 'postgres')
 DATABASE_PASSWORD = os.getenv('DATABASE_PASSWORD', 'postgres')
-DATABASE_NAME = 'main'
+DATABASE_NAME = os.getenv('DATABASE_NAME', 'main')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG', 'True').lower() in 'true t yes y да 1 on'.split()
 
 ALLOWED_HOSTS = ['*']
 

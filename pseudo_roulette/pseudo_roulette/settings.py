@@ -25,6 +25,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'main',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -71,6 +74,7 @@ DATABASES = {
         'PORT': '5432'
     }
 }
+CONN_MAX_AGE = 60
 
 
 # Password validation
